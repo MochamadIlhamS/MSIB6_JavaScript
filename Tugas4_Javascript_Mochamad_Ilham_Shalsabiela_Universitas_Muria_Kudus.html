@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Data Pegawai</title>
 <style>
-    /* CSS untuk membuat tabel berada di tengah halaman, garis tabel berwarna merah, dan teks di tengah untuk elemen <th> */
     body, html {
         height: 100%;
         margin: 0;
@@ -19,18 +12,18 @@
         border-collapse: collapse;
         width: 50%;
         margin-top: 20px;
-        border: 2px solid red; /* warna merah pada garis tabel */
+        border: 2px solid red;
     }
 
     th, td {
-        border: 1px solid red; /* warna merah pada garis tabel */
+        border: 1px solid red;
         padding: 8px;
         text-align: left;
     }
 
     th {
         background-color: yellow;
-        text-align: center; /* teks di tengah untuk elemen <th> */
+        text-align: center; 
     }
 
     tfoot td {
@@ -44,7 +37,7 @@
     let jabatan = "Manager";
     let status = "menikah";
 
-    // Gaji Pokok(if): Manager=>15 jt, Asisten Manager=>10 jt, Staff=>5 jt
+   
     let gajiPokok = 0;
     switch (jabatan) {
         case 'Manager':
@@ -67,7 +60,7 @@
 
     document.write("<table>");
     document.write("<thead>");
-    document.write("<tr><th colspan='8'>Total Gaji</th></tr>"); /* menambahkan colspan='8' agar <th> mengambil 8 kolom */
+    document.write("<tr><th colspan='8'>Total Gaji</th></tr>"); 
     document.write("<tr><th>Nama Pegawai</th><th>Jabatan</th><th>Status</th><th>Gaji Pokok</th><th>Tunjangan Jabatan</th><th>BPJS</th><th>Tunjangan Keluarga</th><th>Total Gaji</th></tr>");
     document.write("</thead>");
     document.write("<tbody>");
@@ -88,4 +81,3 @@
     document.write("</table>");
 </script>
 </body>
-</html>
